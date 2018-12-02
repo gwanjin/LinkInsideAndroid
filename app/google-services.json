@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "137001803445",
+    "firebase_url": "https://linkinside-c41e4.firebaseio.com",
+    "project_id": "linkinside-c41e4",
+    "storage_bucket": "linkinside-c41e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137001803445:android:1caab41bd3e3acdf",
+        "android_client_info": {
+          "package_name": "kita.example.com.kitkatproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137001803445-g57b2g2fahfm5rngv8rtvia691iq2s8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ4pPXgvKKtym9ip-7XeEt5JR1IiELUdw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

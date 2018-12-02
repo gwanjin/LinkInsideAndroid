@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container3"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/relaboveline1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/sidebar"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="#4e82d6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:weightSum="100"
+            android:layout_toRightOf="@+id/sidebar"
+            android:layout_toEndOf="@+id/sidebar">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20">
+
+                <RelativeLayout
+                    android:id="@+id/cal"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22"
+                        android:textColor="#ffa528"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="30sp"
+                        android:layout_alignParentTop="true" />
+
+
+                    <TextView
+                        android:id="@+id/month"
+                        android:textColor="#ffa528"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/date"
+                        android:textSize="15sp"
+                        android:text="MAY" />
+
+                    <TextView
+                        android:id="@+id/year"
+                        android:textColor="#ffa528"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/month"
+                        android:textSize="15sp"
+                        android:text="2015" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/cal"
+                    android:layout_toEndOf="@+id/cal"
+                    android:background="#DADADA" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="75">
+
+                <RelativeLayout
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="8dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:text="Title" />
+
+                    <TextView
+                        android:id="@+id/contentdesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title"
+                        android:text="Description" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/place"
+                        android:layout_below="@id/contentdesc"
+                        android:text="Location"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:text="17:50"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/timeView"
+                        android:layout_alignParentRight="true"/>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/cal_add"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/cal_pic"
+                        android:layout_below="@id/timeView"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
