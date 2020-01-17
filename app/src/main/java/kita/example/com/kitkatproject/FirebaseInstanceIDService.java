@@ -2,8 +2,9 @@ package kita.example.com.kitkatproject;
 
 import android.util.Log;
 
+import androidx.annotation.NonNull;
+
 import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.iid.FirebaseInstanceIdService;
 
 import java.io.IOException;
 
@@ -13,12 +14,11 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 
 
-public class FirebaseInstanceIDService extends FirebaseInstanceIdService{
+public class FirebaseInstanceIDService extends FirebaseMessagingService{
     private static final String TAG = "FirebaseIIDService";
 
-
     @Override
-    public void onTokenRefresh() {
+    public void onNewToken(@NonNull String s) {
         String token = FirebaseInstanceId.getInstance().getToken();
         Log.d(TAG, "Refreshed token: " + token);
 

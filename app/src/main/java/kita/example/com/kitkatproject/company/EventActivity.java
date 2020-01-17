@@ -1,16 +1,10 @@
 package kita.example.com.kitkatproject.company;
 
 import android.app.Activity;
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import kita.example.com.kitkatproject.MainActivity;
 import kita.example.com.kitkatproject.NetworkConnect;
